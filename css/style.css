@@ -55,7 +55,7 @@ tr{
     text-align: center;
 }
 .border:hover{
-    border: 2px solid orange;
+    border: 2px solid rgb(202, 129, 33);
     padding: 10px 20px;
 }  
 .hover-table:hover table{
