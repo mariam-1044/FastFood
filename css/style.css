@@ -29,7 +29,9 @@ header ,.about , main , section{
 }
 .food-header a{
     text-decoration: none;
+    color: rgb(155, 144, 124);
 }
+
 .food-header i{
     float: left;
     margin-right: 20px;
