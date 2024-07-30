@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    perspective: 600px;
+}
+header ,.about , main , section{
+    width: 80%;
+    margin: auto;
+    overflow: auto; 
+}
+.food-header{
+    margin-top: 50px;
+}
+.name{
+    color: rgb(202, 129, 33);
+    font-style: italic;
+    text-shadow: 2px 2px 5px gray;
+}
+.food-header div{
+    float: left;
+    margin-left: 70px;
+}
+.food-header li{
+    list-style-type: none;
+    float: left;
+}
+.food-header a{
+    text-decoration: none;
+}
+.food-header i{
+    float: left;
+    margin-right: 20px;
+}
+.icon{
+    font-size: 25px;
+}
+table{
+    border: 2px solid gray;
+    visibility: hidden;
+    position: absolute;
+    z-index: 10;
+    margin-top: 40px;
+    padding: 10px 5px;
+    background-color: white;
+    width: 25%;
+    height: 20vh; 
+    border-radius: 10px; 
+}
+tr{
+    text-align: center;
+}
+.border:hover{
+    border: 2px solid orange;
+    padding: 10px 20px;
+}  
+.hover-table:hover table{
+    visibility: visible;
+}
+main{
+    background-image: url(../images/back4.jpg);
+    background-size: cover;
+    background-position: 2px;
+    margin-top: 30px;
+    height: 85vh;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+main:hover{
+    animation-play-state: running;
+}
+@keyframes change{
+    25%{
+        background-image: url(../images/pizza2.jpg);
+        animation-delay: 2s;
+    }
+    50%{
+        background-image: url(../images/hamburger.jpeg);
+        animation-delay: 4s;
+    }
+    75%{
+        background-image: url(../images/coffee2.webp);
+        animation-delay: 6s;
+    }
+    100%{
+        background-image: url(../images/back5.jpg);
+        animation-delay: 8s;
+    }
+}
+.about div{
+    width: 40%;
+    margin: 15% 70px;
+}
+.about h1{
+    font-size: 50px;
+    font-weight: bold;
+    /* color: rgb(3, 17, 36); */
+    color: white;
+    text-transform: uppercase;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    margin-top: 30px;
+    color: white;
+    background-color:black;
+    border-style: none;
+}
+.center{
+    margin: 50px 40%;
+}
+.center h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(82, 52, 31);
+}
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(155, 144, 124);
+    margin: auto;
+}
+.line:hover{
+    width: 70px;
+    transform: scale(2,1);
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 50px; 
+}   
+.div1 , .div2 , .div3{
+    width: 300px;
+    height: 410px; 
+}
+.content div h3{
+    margin-top: 20px;
+    color: rgb(202, 129, 33);
+}
+.arrow p{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(202, 129, 33);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 90%;
+    visibility: hidden;
+}
+.content div:hover .arrow p{
+   visibility: visible;
+}
+.cont{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+}
+ .div4{
+    height: 330px;
+    background-color: rgb(224, 217, 217);
+ }
+.cont-info{
+    margin: 50px 60px 0 60px;
+}
+.cont-info i{
+    color: rgb(155, 144, 124);
+    font-size: 50px;
+}
+.cont-info span{
+    color: rgb(82, 52, 31);
+    font-weight: bold;
+    font-size: 40px;
+}
+.cont-info h4{
+    color: white;
+    font-size: 30px;
+}
+.line-3{
+    margin: 80px 0 0 200px;
+    overflow: auto;
+}
+.line-3 p{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(155, 144, 124);
+    float: left;
+    margin-left: 20px;
+}
+.div5{
+    margin-top: 15px;
+    width: 290px;
+    height: 300px;
+    background-image: url(../images/background2.jpg);
+    background-size: cover;
+ }
+.info{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+ }
+ .div5:hover{
+    transform: scale(1.1);
+ }
+ .cont2 {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+ }
+ .cont2 div{
+    width: 200px;
+    height: 120px;
+ } 
+ .icon-de{
+    font-size: 50px;
+    margin: 0 0 20px 60px;
+    color: grey;
+ }
+.icon-de:hover{
+    color: rgb(202, 129, 33);
+    transition: all 0.5s;
+    transform: rotateY(180deg);
+ } 
+ .colum{
+    width: 2px;
+    height: 120px;
+    background-color: grey;
+    margin-right: 10px;
+ }
+ .free{
+    color: rgb(82, 52, 31);
+    font-size: 30px;
+    text-align: center;
+ }
+.center-span{
+    margin: 0 20% 50px 35%;
+}
+.center-span h3{
+    display: inline-block;
+    margin-right: 40px;
+    color: rgb(202, 129, 33);
+}
+.con{
+    margin-bottom: 50px;
+}
+.content-food , .front, .back{
+    width: 280px;
+    height: 380px;
+}
+.content-food{
+    margin-bottom: 20px;
+    position: relative;
+    transition: all  2s;
+    transform-style: preserve-3d;
+}
+.front , .back{
+    position: absolute;
+    background-size: cover;
+}
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.img1{
+    background-image: url(../images/pizza1.jpg);
+    background-position: 10px ;
+}
+.image1{
+    background-image: url(../images/pizza2.jpg);
+}
+.img2{
+    background-image: url(../images/coffee1.webp);
+}
+.image2{
+    background-image: url(../images/coffee3.webp);
+}
+.img3{
+    background-image: url(../images/cake2.webp);
+}
+.image3{
+    background-image: url(../images/desert2.webp);
+}
+.img4{
+    background-image: url(../images/cake3.jpg);
+    background-position: -150px;
+}
+.image4{
+    background-image: url(../images/desert1.webp);
+}
+.img5{
+    background-image: url(../images/jucie0.webp);
+    background-position: -90px;
+}
+.image5{
+    background-image: url(../images/juse1.jpg);
+}
+.img6{
+    background-image: url(../images/ice1.webp);
+}
+.image6{
+    background-image: url(../images/ice2.webp);
+}
+.content-food:hover{
+    transform: rotateY(180deg);
+}
+.back{
+    transform: rotateY(180deg);
+}
+.icon3{
+    height: 40px;
+    width: 50px;
+    background-color: rgba(202, 186, 186, 0.7);
+    color: black;
+    margin: 170px 0 0 30px;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+.star{
+    color: yellow;
+}
+.con h2{
+    color: rgb(202, 129, 33);
+}
+.con h1{
+    color: gray;
+}
