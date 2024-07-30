@@ -51,8 +51,13 @@ table{
     height: 20vh; 
     border-radius: 10px; 
 }
+thead tr{
+    color: gray;
+    text-decoration: underline;
+}
 tr{
     text-align: center;
+    color: rgb(155, 144, 124);
 }
 .border:hover{
     border: 2px solid rgb(202, 129, 33);
@@ -101,7 +106,6 @@ main:hover{
 .about h1{
     font-size: 50px;
     font-weight: bold;
-    /* color: rgb(3, 17, 36); */
     color: white;
     text-transform: uppercase;
 }
